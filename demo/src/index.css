@@ -24,15 +24,24 @@ html, body {
     height: 100%;
     width: 100%;
     display: flex;
+    background-image: url("../../assets/Scenic.png") no-repeat center center;
+    background-image: linear-gradient(to right, #ff83ea81, #ffa1a186), url("../../assets/Scenic.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     justify-content: center;
+
 }
 
 .component.first-component {
-    background-color: gray;
-    position: relative;
+    width: 100%;
+    /* position: relative; */
 }
 
 .first-component--inside-scroller {
-    position: absolute;
+    /* position: absolute; */
     right: 20px;
     top: 100px;
 }
