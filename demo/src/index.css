@@ -9,11 +9,24 @@ html, body {
     margin: 20px auto 0;
     text-align: center;
 }
+.rhap_container {
+    height: 5%;
+}
 
 .links {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+}
+
+.rhap_play-pause-button {
+ background-color: transparent;
+ border: 1px solid transparent;
+ outline: none;
+}
+
+.rhap_progress-section {
+    display: none;
 }
 
 .links .link {
@@ -24,20 +37,35 @@ html, body {
     height: 100%;
     width: 100%;
     display: flex;
-    background-image: url("../../assets/Scenic.png") no-repeat center center;
+    /* background-image: url("../../assets/Scenic.png") no-repeat center center;
     background-image: linear-gradient(to right, #ff83ea81, #ffa1a186), url("../../assets/Scenic.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
      background-size: cover;
-     justify-content: center;
+     justify-content: center; */
 
 }
 
 .component.first-component {
+ 
+    height: 100%;
     width: 100%;
+    display: flex;
+    background-image: url("../../assets/Scenic.png") no-repeat center center;
+    background-image: linear-gradient(to Bottom, #d861c431, #f76666b6), url("../../assets/park-lg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     justify-content: center;
     /* position: relative; */
+}
+
+.rhap_container {
+
 }
 
 .first-component--inside-scroller {
@@ -47,7 +75,17 @@ html, body {
 }
 
 .component.second-component {
-    background-color: red;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-image: url("../../assets/MGMTBandImage.png") no-repeat center center; */
+    background-image: linear-gradient(to right, #d15cbe62, #ffa1a186), url("../../assets/MGMTBandImage.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     justify-content: center;
 }
 
 .component.third-component {
@@ -72,7 +110,7 @@ h2 {
     position: fixed;
     top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
