@@ -48,30 +48,49 @@ html, body {
 
 }
 
+.banner {
+    background-color: white;
+    width: 90%;
+    margin-top: -75px;
+    opacity: 64%;
+}
+
 .component.first-component {
  
     height: 100%;
     width: 100%;
     display: flex;
     background-image: url("../../assets/Scenic.png") no-repeat center center;
-    background-image: linear-gradient(to Bottom, #d861c431, #f76666b6), url("../../assets/park-lg.png");
+    background-image: linear-gradient(to Bottom, #d861c431, #f766aab6), url("../../assets/park-lg.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
      background-size: cover;
-     justify-content: center;
+     flex-direction: column;
+    align-items: center;
     /* position: relative; */
 }
 
-.rhap_container {
 
-}
 
 .first-component--inside-scroller {
     /* position: absolute; */
     right: 20px;
     top: 100px;
+}
+
+.pager li>a {
+    border: none;
+    background-color: transparent;
+    margin-right: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.pager li>a:focus, .pager li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .component.second-component {
@@ -110,7 +129,7 @@ h2 {
     position: fixed;
     top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
