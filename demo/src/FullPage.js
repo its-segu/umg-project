@@ -15,11 +15,10 @@ import Logo from "../../assets/Logo.png";
 const navigation = [
   "",
   "MGMT",
-  "The Band",
-  "Tour Dates",
-  "Merch",
-  "Videos",
-  "Analytics",
+  "TOUR DATES",
+  "MERCH",
+  "VIDEOS",
+  "ANALYTICS",
 ];
 
 import "./index.css";
@@ -70,9 +69,9 @@ export default class FullPage extends React.Component {
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
         <img src={Logo} style={{ fontColor: "red" }}  height={32}  />
-        <div>
+        {/* <div> */}
           {pagesNumbers}
-        </div>
+        {/* </div> */}
           <AudioPlayer
             autoPlay
             style={{}}

@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet');
+
+
+
 html, body {
     margin: 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
+
+.button-font {
+    /* font-family: 'Anton', sans-serif; */
+    /* font-size: 20px */
+}
+
+.tourDateFont {
+    font-family: 'Montserrat', sans-serif;
+    color: "white";
+    font-size: 50px
+}
+
 
 .title {
     margin: 20px auto 0;
@@ -37,15 +55,6 @@ html, body {
     height: 100%;
     width: 100%;
     display: flex;
-    /* background-image: url("../../assets/Scenic.png") no-repeat center center;
-    background-image: linear-gradient(to right, #ff83ea81, #ffa1a186), url("../../assets/Scenic.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
-     justify-content: center; */
-
 }
 
 .banner {
@@ -53,15 +62,22 @@ html, body {
     width: 90%;
     margin-top: -75px;
     opacity: 64%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.permanent-mark {
+   font-family: 'Permanent Marker', cursive;
+   color: black;
+
+}
 .component.first-component {
- 
     height: 100%;
     width: 100%;
     display: flex;
     background-image: url("../../assets/Scenic.png") no-repeat center center;
-    background-image: linear-gradient(to Bottom, #d861c431, #f766aab6), url("../../assets/park-lg.png");
+    background-image: linear-gradient(to Bottom, #d861c431, #f766aab6), url("../../assets/park-sm.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -84,8 +100,14 @@ html, body {
     border: none;
     background-color: transparent;
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.fontfam {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
 }
 
 .pager li>a:focus, .pager li>a:hover {
@@ -97,14 +119,7 @@ html, body {
     height: 100%;
     width: 100%;
     display: flex;
-    /* background-image: url("../../assets/MGMTBandImage.png") no-repeat center center; */
-    background-image: linear-gradient(to right, #d15cbe62, #ffa1a186), url("../../assets/MGMTBandImage.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
-     justify-content: center;
+    background-color: #373737;
 }
 
 .component.third-component {
