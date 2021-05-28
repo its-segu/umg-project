@@ -24,12 +24,17 @@ export default () => {
 
   return (
     <div className="component first-component">
-      <img
+      <motion.img
         src={mgmt}
-        style={{ fontColor: "red",opacity: .85 }}
+        style={{ opacity: .85 }}
         height={750}
         width={750}
         data-aos="fade-down"
+        // whileTap={{ scale: 0.9 }}
+        // drag={true}
+        // dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+        // initial={{ opacity: 0, y: -100 }}
+        // animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       />
 
       <div className="banner"

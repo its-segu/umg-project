@@ -11,15 +11,7 @@ import AudioPlayer from "react-h5-audio-player";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import Logo from "../../assets/Logo.png";
 
-
-const navigation = [
-  "",
-  "MGMT",
-  "TOUR DATES",
-  "MERCH",
-  "VIDEOS",
-  "ANALYTICS",
-];
+const navigation = ["", "MGMT", "TOUR DATES", "MERCH", "VIDEOS", "ANALYTICS"];
 
 import "./index.css";
 
@@ -68,10 +60,10 @@ export default class FullPage extends React.Component {
           <FifthComponent />
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
-        <img src={Logo} style={{ fontColor: "red" }}  height={32}  />
-        {/* <div> */}
+          <img src={Logo} style={{ fontColor: "red" }} height={32} />
+          {/* <div> */}
           {pagesNumbers}
-        {/* </div> */}
+          {/* </div> */}
           <AudioPlayer
             autoPlay
             style={{}}

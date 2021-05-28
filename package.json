@@ -26,13 +26,13 @@
     "babel-polyfill": "^6.26.0",
     "framer-motion": "^4.1.17",
     "react-fade-in": "^2.0.1",
-    "react-h5-audio-player": "^3.7.1"
+    "react-h5-audio-player": "^3.7.1",
+    "react-player": "^2.9.0",
+    "swiper": "^6.6.2"
   },
   "peerDependencies": {
     "babel-polyfill": "^6.26.0",
     "prop-types": "^15.6.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
@@ -50,9 +50,7 @@
     "gh-pages": "^1.1.0",
     "nwb": "^0.25.2",
     "prettier": "^1.18.2",
-    "react": "^16.13.1",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.13.1",
     "react-router-dom": "^4.3.1"
   },
   "author": "Viktor Liegostaiev",

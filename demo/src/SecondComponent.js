@@ -1,14 +1,3 @@
-// import React from "react";
-
-// export default () => {
-//   return (
-//     <div className="component second-component">
-//       <h2>Second Component</h2>
-
-//     </div>
-//   );
-// };
-
 import React from "react";
 import { useState, useEffect, useCallback, updateState } from "react";
 import "./index.css";
@@ -35,8 +24,8 @@ const useStyles = makeStyles(theme => ({
   scroll: {
     overflowX: "scroll",
     height: "80%",
-    marginRight: 20,
-    marginLeft: 20
+    // marginRight: 20,
+    // marginLeft: 20
   },
   tourDate: {
     backgroundColor: "transparent",
@@ -51,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   },
   tourDateTitle: {
     backgroundColor: "transparent",
-    height: 200,
+    height: "20%",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
@@ -172,18 +161,6 @@ export default function SecondComponent() {
     // .then(data => sortAppointments(data));
   }, []);
 
-  // const rescheduleClick = (appointment) => {
-  //   globalActions.showDialog(true);
-  // }
-
-  // const confirmClick = (appointment) => {
-  //   globalActions.confirmedAppointment(appointment);
-  //   var index = appointments.indexOf(appointment);
-  //   if (index > -1) {
-  //       appointments.splice(index, 1);
-  //   }
-  //   setAppointments(appointments)
-  // }
 
   return (
     <div className={classes.root}>
