@@ -26,7 +26,7 @@ export default () => {
     <div className="component first-component">
       <motion.img
         src={mgmt}
-        style={{ opacity: .85 }}
+        style={{ opacity: .95 }}
         height={750}
         width={750}
         data-aos="fade-down"

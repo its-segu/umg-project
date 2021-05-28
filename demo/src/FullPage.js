@@ -11,7 +11,7 @@ import AudioPlayer from "react-h5-audio-player";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import Logo from "../../assets/Logo.png";
 
-const navigation = ["", "MGMT", "TOUR DATES", "MERCH", "VIDEOS", "ANALYTICS"];
+const navigation = ["", "MGMT", "TOUR DATES", "VIDEOS", "MERCH", "ANALYTICS"];
 
 import "./index.css";
 
@@ -65,7 +65,7 @@ export default class FullPage extends React.Component {
           {pagesNumbers}
           {/* </div> */}
           <AudioPlayer
-            autoPlay
+            // autoPlay
             style={{}}
             src="../../assets/TheHandshake.mp3"
             onPlay={e => console.log("onPlay")}
