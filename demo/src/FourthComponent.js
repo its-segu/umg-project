@@ -1,27 +1,60 @@
 import React from "react";
+import Shirt1 from "../../assets/store/shirt1.png";
 
 export default () => {
   return (
     <div className="component fourth-component">
-      <div
+      {/* <div
         style={{
-          height: "20%",
-          backgroundColor: "#373737",
-          color: "white",
+          height: "10%",
+          backgroundColor: "white",
+          color: "black",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
         <h1 className="fontfam">Shop</h1>
-      </div>
-      <div className="container">
+      </div> */}
+
+
+      <div className="containerRow">
+        <div className="content">
+          <div className="content-overlay"></div>
+          <img
+            className="content-image"
+            src={Shirt1}
+            height="100%"
+            width="100%"
+          />
+          <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">This is a title</h3>
+            <p className="content-text">This is a short description</p>
+          </div>
+        </div>
+        <div className="content">
+          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+          <div className="content-overlay"></div>
+          <img
+            className="content-image"
+            src={Shirt1}
+            height="100%"
+            width="100%"
+          />
+          <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">This is a title</h3>
+            <p className="content-text">This is a short description</p>
+          </div>
+          </a>
+        </div>
         <div className="content">
           <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank" />
           <div className="content-overlay"></div>
           <img
             className="content-image"
-            src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
+            src={Shirt1}
+            height="100%"
+            width="100%"
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">This is a title</h3>
@@ -29,6 +62,56 @@ export default () => {
           </div>
         </div>
       </div>
+
+      <div className="containerRow">
+        <div className="content">
+          {/* <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank" /> */}
+          <div className="content-overlay"></div>
+          <img
+            className="content-image"
+            src={Shirt1}
+            height="100%"
+            width="100%"
+          />
+          <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">This is a title</h3>
+            <p className="content-text">This is a short description</p>
+          </div>
+        </div>
+        <div className="content">
+          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank" />
+          <div className="content-overlay"></div>
+          <img
+            className="content-image"
+            src={Shirt1}
+            height="100%"
+            width="100%"
+          />
+          <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">This is a title</h3>
+            <p className="content-text">This is a short description</p>
+          </div>
+        </div>
+        <div className="content">
+          <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank" />
+          <div className="content-overlay"></div>
+          <img
+            className="content-image"
+            src={Shirt1}
+            height="100%"
+            width="100%"
+          />
+          <div className="content-details fadeIn-bottom">
+            <h3 className="content-title">This is a title</h3>
+            <p className="content-text">This is a short description</p>
+          </div>
+        </div>
+      </div>
+   
     </div>
+
   );
 };
+
+
+

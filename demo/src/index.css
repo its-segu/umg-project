@@ -113,7 +113,7 @@ html, body {
 
 .pager li>a:focus, .pager li>a:hover {
     text-decoration: none;
-    background-color: transparent;
+    background-color: black;
 }
 
 .component.second-component {
@@ -155,7 +155,12 @@ html, body {
 }
 
 .component.fifth-component {
-    background-color: purple;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #373737;
 }
 
 h2 {
@@ -220,22 +225,24 @@ body{
   padding: 0.7em 0;
 }
 
-.container{
-  padding: 1em 0;
-  float: left;
-  width: 50%;
+.containerRow{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
+
 @media screen and (max-width: 640px){
-  .container{
+  /* .container{
     display: block;
     width: 100%;
-  }
+  } */
 }
 
 @media screen and (min-width: 900px){
-  .container{
+  /* .container{
     width: 33.33333%;
-  }
+  } */
 }
 
 .container .title{
@@ -246,16 +253,17 @@ body{
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+  /* max-width: 400px; */
   margin: auto;
   overflow: hidden;
+  height: 100%;
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.7);
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -299,7 +307,7 @@ body{
 }
 
 .content-details h3{
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 500;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
@@ -307,7 +315,7 @@ body{
 }
 
 .content-details p{
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 0.8em;
 }
 

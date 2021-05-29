@@ -172,14 +172,14 @@ export default function SecondComponent() {
           <div key={i} className={classes.tourDate}>
             <div style={{display: "flex", flexDirection:"row", alignItems: "left"}}>
             <div style={{ marginRight: 30 }}>
-              <h4 style={{ color: "#E68FD5" }}>{tourDate.day}</h4>
-              <h2 style={{ color: "white"}}>{tourDate.date}</h2>
-              <h4 style={{ color: "#E68FD5" }}>{tourDate.year}</h4>
+              <h4 style={{ color: "#E68FD5", fontWeight: "900" }}>{tourDate.day}</h4>
+              <h2 style={{ color: "white", fontWeight: "900" }}>{tourDate.date}</h2>
+              <h4 style={{ color: "#E68FD5", fontWeight: "900" }}>{tourDate.year}</h4>
             </div>
             <div>
-              <h4 style={{ color: "white" }}>{tourDate.location}</h4>
-              <h2 style={{ color: "#E68FD5", textAlign: "left" }}>{tourDate.venue}</h2>
-              <h4 style={{ color: "white" }}>{tourDate.guests}</h4>
+              <h4 style={{ color: "white", fontWeight: "900" }}>{tourDate.location}</h4>
+              <h2 style={{ color: "#E68FD5", textAlign: "left", fontWeight: "900" }}>{tourDate.venue}</h2>
+              <h4 style={{ color: "white", fontWeight: "900" }}>{tourDate.guests}</h4>
             </div>
             </div>
             <div className={classes.buttonDiv}>
