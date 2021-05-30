@@ -174,17 +174,16 @@ export default function SecondComponent() {
       </div>
       <div className={classes.scroll}>
         {tourDates.map((tourDate, i) => (
-      
           <div key={i} className={classes.tourDate}>
             <div style={{display: "flex", flexDirection:"row", alignItems: "left"}}>
             <div style={{ marginRight: 30 }}>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.day}</p>
-              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 35, marginBottom: "-10px" }}>{tourDate.date}</p>
+              <p className="tourDateFont" style={{ color: "white", fontWeight: "500", fontSize: 35, marginBottom: "-10px" }}>{tourDate.date}</p>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.year}</p>
             </div>
             <div>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.location}</p>
-              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 35, marginBottom: "-10px" }}>{tourDate.venue}</p>
+              <p className="tourDateFont" style={{ color: "white", fontWeight: "500", fontSize: 35, marginBottom: "-10px" }}>{tourDate.venue}</p>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.guests}</p>
             </div>
             </div>
