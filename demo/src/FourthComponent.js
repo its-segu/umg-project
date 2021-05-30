@@ -6,18 +6,18 @@ import Poster from "../../assets/store/poster.png";
 export default () => {
   return (
     <div className="component fourth-component">
-      {/* <div
+      <div
         style={{
-          height: "10%",
-          backgroundColor: "white",
-          color: "black",
+          height: "9%",
+          backgroundColor: "black",
+          color: "white",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <h1 className="fontfam">Shop</h1>
-      </div> */}
+        {/* <h1 className="fontfam">Shop</h1> */}
+      </div>
 
 
       <div className="containerRow">
