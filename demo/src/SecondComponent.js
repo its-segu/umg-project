@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
   tourDate: {
     backgroundColor: "transparent",
-    height: "20%",
+    height: "25%",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
@@ -37,6 +37,8 @@ const useStyles = makeStyles(theme => ({
     color: "black",
     marginBottom: 2,
     borderBottom: "5px solid white",
+    paddingLeft: 20,
+    paddingRight: 10
   },
   tourDateTitle: {
     backgroundColor: "transparent",
@@ -169,18 +171,18 @@ export default function SecondComponent() {
       </div>
       <div className={classes.scroll}>
         {tourDates.map((tourDate, i) => (
-          <div>
+      
           <div key={i} className={classes.tourDate}>
             <div style={{display: "flex", flexDirection:"row", alignItems: "left"}}>
             <div style={{ marginRight: 30 }}>
-              <h4 style={{ color: "#E68FD5", fontWeight: "900" }}>{tourDate.day}</h4>
-              <h2 style={{ color: "white", fontWeight: "900" }}>{tourDate.date}</h2>
-              <h4 style={{ color: "#E68FD5", fontWeight: "900" }}>{tourDate.year}</h4>
+              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.day}</p>
+              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 40, marginBottom: "-10px" }}>{tourDate.date}</p>
+              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.year}</p>
             </div>
             <div>
-              <h4 style={{ color: "white", fontWeight: "900" }}>{tourDate.location}</h4>
-              <h2 style={{ color: "#E68FD5", textAlign: "left", fontWeight: "900" }}>{tourDate.venue}</h2>
-              <h4 style={{ color: "white", fontWeight: "900" }}>{tourDate.guests}</h4>
+              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.location}</p>
+              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 40, marginBottom: "-10px" }}>{tourDate.venue}</p>
+              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.guests}</p>
             </div>
             </div>
             <div className={classes.buttonDiv}>
@@ -188,6 +190,7 @@ export default function SecondComponent() {
                 classes={{
                   root: classes.buttonSecond,
                 }}
+                className="tourDateFont" 
               >
                 VIP
               </Button>
@@ -195,12 +198,13 @@ export default function SecondComponent() {
                 classes={{
                   root: classes.buttonRoot,
                 }}
+                className="tourDateFont" 
               >
                 TICKETS
               </Button>
             </div>
           </div>
-          </div>
+       
         ))}
       </div>
     </div>

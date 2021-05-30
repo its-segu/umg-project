@@ -2,143 +2,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet');
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet");
 
-
-html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
+/* p {
+  margin-bottom: -10px;
+} */
+
 .button-font {
-    /* font-family: 'Anton', sans-serif; */
-    /* font-size: 20px */
+  /* font-family: 'Anton', sans-serif; */
+  /* font-size: 20px */
 }
 
 .tourDateFont {
-    font-family: 'Montserrat', sans-serif;
-    color: "white";
-    font-size: 50px
+  font-family: "Montserrat", sans-serif;
+  color: "white";
+  font-size: 50px;
 }
 
+.tourDateFont {
+  font-family: 'Roboto', sans-serif;
+}
 
 .title {
-    margin: 20px auto 0;
-    text-align: center;
+  margin: 20px auto 0;
+  text-align: center;
 }
 .rhap_container {
-    height: 5%;
+  height: 5%;
 }
 
 .links {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
 }
 
 .rhap_play-pause-button {
- background-color: transparent;
- border: 1px solid transparent;
- outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
 }
 
 .rhap_progress-section {
-    display: none;
+  display: none;
 }
 
 .links .link {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .component {
-    height: 100%;
-    width: 100%;
-    display: flex;
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 .banner {
-    background-color: white;
-    width: 90%;
-    margin-top: -75px;
-    opacity: 64%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  background-color: white;
+  width: 90%;
+  margin-top: -75px;
+  opacity: 64%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .permanent-mark {
-   font-family: 'Permanent Marker', cursive;
-   color: black;
-
+  font-family: "Permanent Marker", cursive;
+  color: black;
 }
 .component.first-component {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-image: url("../../assets/Scenic.png") no-repeat center center;
-    /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/park-sm.png'); */
-        /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Ferris-Wheel.png'); */
-        /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  background-image: url("../../assets/Scenic.png") no-repeat center center;
+  /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/park-sm.png'); */
+  /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Ferris-Wheel.png'); */
+  /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
 
-        /* background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
-        background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(187, 152, 190, 0.74)), url('../../assets/Arcade.jpg');
-
-
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
-     flex-direction: column;
-    align-items: center;
-    /* position: relative; */
+  /* background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
+  background-image: linear-gradient(
+      to Bottom,
+      rgba(72, 144, 167, 0.425),
+      rgba(187, 152, 190, 0.74)
+    ),
+    url("../../assets/Arcade.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative; */
 }
 
+.albumImage {
+  background-image: url("../../assets/Album.png") ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  /* flex-direction: column;
+  align-items: center; */
 
+
+}
+
+.albumBanner {
+  background-color: white;
+  margin-left: 3em;
+  /* width: ""; */
+  /* margin-top: -75px; */
+  opacity: 64%;
+  align-items: center;
+  padding: 20px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
 
 .first-component--inside-scroller {
-    /* position: absolute; */
-    right: 20px;
-    top: 100px;
+  /* position: absolute; */
+  right: 20px;
+  top: 100px;
 }
 
-.pager li>a {
-    border: none;
-    background-color: transparent;
-    margin-right: 50px;
-    font-size: 15px;
-    color: white;
-    font-family: 'Raleway', sans-serif;    
-    font-weight: 500;
-
+.pager li > a {
+  border: none;
+  background-color: transparent;
+  margin-right: 50px;
+  font-size: 15px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 .fontfam {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
 }
 
-.pager li>a:focus, .pager li>a:hover {
-    text-decoration: none;
-    background-color: black;
+.pager li > a:focus,
+.pager li > a:hover {
+  text-decoration: none;
+  background-color: black;
 }
 
 .component.second-component {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: #333;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #333;
 }
 
 .component.third-component {
-    background-color:white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: "center";
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: "center";
 }
 
 /* .video-container {
@@ -155,12 +192,12 @@ html, body {
 } */
 
 .component.fourth-component {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: "center";
-    background-color: #333;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: "center";
+  background-color: #333;
 }
 
 .component.fifth-component {
@@ -173,88 +210,91 @@ html, body {
 }
 
 h2 {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .pagination-additional-class {
-    margin: 0;
-    position: fixed;
-    top: 20px;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
-    margin-right: 50px;
+.pagination-additional-class > li:not(:last-of-type) > a,
+.pagination-additional-class > li:not(:last-of-type) > span {
+  margin-right: 50px;
 }
 
 .demo-page-contain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .demo-page-contain__hint {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-    .pagination-additional-class > li:not(:last-of-type) > a, .pagination-additional-class > li:not(:last-of-type) > span {
-        margin-right: 5px;
-    }
+  .pagination-additional-class > li:not(:last-of-type) > a,
+  .pagination-additional-class > li:not(:last-of-type) > span {
+    margin-right: 5px;
+  }
 }
-
 
 /* effects */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #f9f9f9;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.main-title{
+.main-title {
   color: #2d2d2d;
   text-align: center;
   text-transform: capitalize;
   padding: 0.7em 0;
 }
 
-.containerRow{
+.containerRow {
   height: 50%;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   /* .container{
     display: block;
     width: 100%;
   } */
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   /* .container{
     width: 33.33333%;
   } */
 }
 
-.container .title{
+.container .title {
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 10px;
@@ -284,7 +324,7 @@ body{
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay{
+.content:hover .content-overlay {
   opacity: 1;
 }
 
@@ -309,13 +349,13 @@ body{
   transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details{
+.content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.content-details h3{
+.content-details h3 {
   color: rgb(0, 0, 0);
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -323,23 +363,23 @@ body{
   text-transform: uppercase;
 }
 
-.content-details p{
+.content-details p {
   color: rgb(0, 0, 0);
   font-size: 0.8em;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
 
-.fadeIn-top{
+.fadeIn-top {
   top: 20%;
 }
 
-.fadeIn-left{
+.fadeIn-left {
   left: 20%;
 }
 
-.fadeIn-right{
+.fadeIn-right {
   left: 80%;
 }

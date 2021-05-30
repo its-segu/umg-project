@@ -22,7 +22,7 @@ export default () => {
 
       <div className="containerRow">
         <div className="content">
-          <div className="content-overlay"></div>
+          <div className="content-overlay "></div>
           <img
             className="content-image"
             src={Shirt1}
