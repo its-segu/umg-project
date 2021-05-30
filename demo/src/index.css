@@ -146,6 +146,7 @@ body {
 
 .pager li > a {
   border: none;
+  border-radius: 30px;
   background-color: transparent;
   margin-right: 50px;
   font-size: 17px;
@@ -157,13 +158,20 @@ body {
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
 }
+.pager li.active > a {
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 50;
+  border: 2px solid #ff4ee1;
+  /* color:#ff4ee1 ; */
+}
 
 .pager li > a:focus,
 .pager li > a:hover {
   text-decoration: none;
   background-color: transparent;
   border-radius: 50;
-  border: 2px solid #ff4ee1;
+  /* border: none */
   /* color:#ff4ee1 ; */
 }
 

@@ -43,7 +43,7 @@ export default () => {
           <div className="albumImage">
           <div>
           <AudioPlayer
-            autoPlay
+            // autoPlay
             style={{marginBottom: 20}}
             src="../../assets/TheHandshake.mp3"
             onPlay={e => console.log("onPlay")}

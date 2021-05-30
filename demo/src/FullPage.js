@@ -18,15 +18,17 @@ import "./index.css";
 export default class FullPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentPage: null };
+    this.state = { currentPage: 0 };
   }
 
   handlePageChange = number => {
+    console.log(number)
     this.setState({ currentPage: number });
   };
 
   handleBeforePageChange = number => {
     console.log(number);
+    // this.setState({ currentPage: number });
   };
 
   getPagesNumbers = () => {
@@ -34,11 +36,12 @@ export default class FullPage extends React.Component {
 
     for (let i = 1; i < navigation.length; i++) {
       pageNumbers.push(
-        <Pager.Item key={i} eventKey={i - 1} onSelect={this.handlePageChange}>
+        <Pager.Item className={`${this.state.currentPage === i - 1 ? "active" : ""}`} key={i} eventKey={i - 1} onSelect={this.handlePageChange}>
           {navigation[i]}
         </Pager.Item>,
       );
     }
+    console.log(pageNumbers)
 
     return [...pageNumbers];
   };
@@ -64,7 +67,7 @@ export default class FullPage extends React.Component {
           {/* <div> */}
           {pagesNumbers}
           {/* </div> */}
-          <AudioPlayer
+          {/* <AudioPlayer
             // autoPlay
             style={{}}
             src="../../assets/TheHandshake.mp3"
@@ -95,7 +98,7 @@ export default class FullPage extends React.Component {
                 />
               ),
             }}
-          />
+          /> */}
         </Pager>
       </React.Fragment>
     );
