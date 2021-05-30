@@ -39,12 +39,12 @@ export default () => {
           // animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
         />
         <div className="albumBanner" style={{ opacity: .64}} data-aos="fade-up">
-        <h1 className="permanent-mark">New Release</h1>
+        <h1 className="permanent-mark" style={{marginTop: -10, fontSize: 40, marginBottom: 20}}>New Release</h1>
           <div className="albumImage">
           <div>
           <AudioPlayer
             autoPlay
-            style={{}}
+            style={{marginBottom: 20}}
             src="../../assets/TheHandshake.mp3"
             onPlay={e => console.log("onPlay")}
             showJumpControls={false}
@@ -87,7 +87,7 @@ export default () => {
       </div>
 
       {/* <div className="banner"
-        data-aos="fade-up"
+        data-aos="fade-right"
         style={{opacity: .64}}
       >
         <div style={{ display: "flex", flexDirection: "row" }}>
