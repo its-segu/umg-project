@@ -12,16 +12,15 @@ const FifthComponent = () => {
       chart: {
         id: "basic-bar",
       },
-      colors: ['#F8D7BD', '#546E7A', '#d4526e', 
-              ],
+      colors: ["#F8D7BD", "#546E7A", "#d4526e"],
       xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
         labels: {
           style: {
             colors: "white",
-            fontSize: '12px'
-          }
-        }
+            fontSize: "12px",
+          },
+        },
       },
       yaxis: {
         axisBorder: {
@@ -40,15 +39,15 @@ const FifthComponent = () => {
     },
     crosshairs: {
       fill: {
-        type: 'gradient',
+        type: "gradient",
         gradient: {
-          colorFrom: '#D8E3F0',
-          colors: 'red',
+          colorFrom: "#D8E3F0",
+          colors: "red",
           stops: [0, 100],
           opacityFrom: 0.4,
           opacityTo: 0.5,
-        }
-      }
+        },
+      },
     },
     series: [
       {
@@ -185,29 +184,17 @@ const FifthComponent = () => {
     //   />
     // </div>
     <div className="component fifth-component">
-            <div
-        style={{
-          height: "20%",
-          backgroundColor: "#333",
-          color: "white",
-          display: "flex",
-          alignItems: "flex-end",
-          justifyContent: "center",
-        }}
-      >
-        <h1 className="fontfam">Songs By Popularity</h1>
+      <div className="fifth-title">
+        <h1 className="fontfam2">Songs By Popularity</h1>
       </div>
-      {/* <div className="row"> */}
-      <div className="mixed-chart" style={{margin: "auto", width:"60%"}}>
+      <div className="mixed-chart">
         <Chart
           options={data.options}
           series={data.series}
           type="bar"
           width="100%"
-          // height="100%"
         />
       </div>
-      {/* </div> */}
     </div>
   );
 };

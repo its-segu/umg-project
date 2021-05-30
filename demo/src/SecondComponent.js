@@ -37,6 +37,7 @@ const useStyles = makeStyles(theme => ({
     borderBottom: "5px solid white",
     paddingLeft: 20,
     paddingRight: 10,
+ 
     "&:hover": {
       backgroundColor: 'rgb(111 111 111 / 42%)'
     }

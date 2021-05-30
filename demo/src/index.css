@@ -34,25 +34,25 @@ body {
 
 .tourDateFont1 {
   font-family: "Roboto", sans-serif;
-  color: #E68FD5; 
-  font-weight: 400; 
-  font-size: 25px; 
-  margin-bottom: -10px
+  color: #e68fd5;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: -10px;
 }
 
 .tourDateFont2 {
   font-family: "Roboto", sans-serif;
-  color: white; 
-  font-weight: 500; 
-  font-size: 35px; 
-  margin-bottom: -10px
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: -10px;
 }
 
 .tourDateFont3 {
   font-family: "Roboto", sans-serif;
-  color: white; 
-  font-weight: 400; 
-  font-size: 25px; 
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
   /* margin-bottom:  */
 }
 
@@ -60,7 +60,19 @@ body {
   margin-right: 30px;
 }
 
+.mixed-chart {
+  margin: auto;
+  width: 60%;
+}
 
+.fifth-title {
+  height: 23%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 
 @media screen and (max-width: 1100px) {
   .imageFirstComp {
@@ -68,11 +80,38 @@ body {
     height: 300px;
     width: 300px;
   }
+  .mixed-chart {
+    margin: auto;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 675px) {
+  .fifth-title {
+    height: 40%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20%;
+  }
+  .mixed-chart {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  div > .fontfam {
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+  }
+  div > .fontfam2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 35px;
+  }
   .tourDateButton {
-    padding: 10px
+    padding: 10px;
+    display: none;
   }
   .td-wrap {
     margin-right: 10px;
@@ -84,34 +123,33 @@ body {
     width: 320px;
   }
   .bannerWrapper > .albumBanner {
-    margin-left: 0em; 
+    margin-left: 0em;
     margin-top: -50px;
   }
   .albumBanner > .albumImage {
-   
     height: 250px;
   }
-  
+
   .audio-player {
     margin-bottom: -30px;
   }
   .tourDateFont1 {
     font-family: "Roboto", sans-serif;
-    color: #E68FD5; 
-    font-weight: 400; 
-    font-size: 16px; 
-    margin-bottom: -0px
+    color: #e68fd5;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: -0px;
   }
-  
+
   .tourDateFont2 {
     font-family: "Roboto", sans-serif;
-    color: white; 
-    font-weight: 500; 
-    font-size: 25px; 
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
     margin-bottom: -10px;
     line-height: initial;
   }
-  
+
   .tourDateFont3 {
     display: none;
     /* margin-bottom:  */
@@ -131,8 +169,6 @@ body {
   color: "white";
   font-size: 50px;
 } */
-
-
 
 .title {
   margin: 20px auto 0;
@@ -247,6 +283,10 @@ body {
   font-weight: 600;
 }
 .fontfam {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+}
+.fontfam2 {
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
 }
@@ -383,7 +423,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-
 
 .container .title {
   color: #1a1a1a;
