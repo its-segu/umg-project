@@ -17,34 +17,21 @@ export default () => {
 
   return (
     <div className="component first-component">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "100%",
-        }}
+      <div className="bannerWrapper"
       >
-        <motion.img
+        <img
           src={mgmt}
-          style={{ opacity: "100%" }}
-          height={650}
-          width={650}
+          className="imageFirstComp"
           data-aos="fade-down"
-          // whileTap={{ scale: 0.9 }}
-          // drag={true}
-          // dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
-          // initial={{ opacity: 0, y: -100 }}
-          // animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
         />
-        <div className="albumBanner" style={{ opacity: .64}} data-aos="fade-up">
+        <div className="albumBanner" >
         <h1 className="permanent-mark" style={{marginTop: -10, fontSize: 40, marginBottom: 20}}>New Release</h1>
           <div className="albumImage">
           <div>
           <AudioPlayer
             // autoPlay
-            style={{marginBottom: 20}}
+            className="audio-player"
+            
             src="../../assets/TheHandshake.mp3"
             onPlay={e => console.log("onPlay")}
             showJumpControls={false}

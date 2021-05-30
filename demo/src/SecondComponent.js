@@ -24,8 +24,6 @@ const useStyles = makeStyles(theme => ({
   scroll: {
     overflowX: "scroll",
     height: "80%",
-    // marginRight: 20,
-    // marginLeft: 20
   },
   tourDate: {
     backgroundColor: "transparent",
@@ -88,7 +86,7 @@ export default function SecondComponent() {
   // const [globalState, globalActions] = useGlobal();
   const [tourDates, setTourDates] = useState([
     {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -96,16 +94,7 @@ export default function SecondComponent() {
       guests: "IMAGINE DRAGONS, STEEL PULSE "
     },
     {
-      location: "CAMBDON, NJ, 01854",
-      venue: "BB&T PAVILION",
-      day: "SAT",
-      date: "AUG 21",
-      year: "2021",
-      guests: "IMAGINE DRAGONS, STEEL PULSE "
-
-    },
-    {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -114,7 +103,7 @@ export default function SecondComponent() {
 
     },
     {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -123,7 +112,7 @@ export default function SecondComponent() {
 
     },
     {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -132,7 +121,7 @@ export default function SecondComponent() {
 
     },
     {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -141,7 +130,7 @@ export default function SecondComponent() {
 
     },
     {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -150,7 +139,16 @@ export default function SecondComponent() {
 
     },
     {
-      location: "CAMBDON, NJ, 01854",
+      location: "CAMBDON, NJ",
+      venue: "BB&T PAVILION",
+      day: "SAT",
+      date: "AUG 21",
+      year: "2021",
+      guests: "IMAGINE DRAGONS, STEEL PULSE "
+
+    },
+    {
+      location: "CAMBDON, NJ",
       venue: "BB&T PAVILION",
       day: "SAT",
       date: "AUG 21",
@@ -170,21 +168,21 @@ export default function SecondComponent() {
   return (
     <div className={classes.root}>
       <div className={classes.tourDateTitle}>
-        <h1 className="fontfam">TOUR DATES</h1>
+        <h1 className="fontfam" style={{paddingTop: 30}}>TOUR DATES</h1>
       </div>
       <div className={classes.scroll}>
         {tourDates.map((tourDate, i) => (
           <div key={i} className={classes.tourDate}>
             <div style={{display: "flex", flexDirection:"row", alignItems: "left"}}>
-            <div style={{ marginRight: 30 }}>
-              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.day}</p>
-              <p className="tourDateFont" style={{ color: "white", fontWeight: "500", fontSize: 35, marginBottom: "-10px" }}>{tourDate.date}</p>
-              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.year}</p>
+            <div className="td-wrap">
+              <p className="tourDateFont1">{tourDate.day}</p>
+              <p className="tourDateFont2">{tourDate.date}</p>
+              <p className="tourDateFont3">{tourDate.year}</p>
             </div>
             <div>
-              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.location}</p>
-              <p className="tourDateFont" style={{ color: "white", fontWeight: "500", fontSize: 35, marginBottom: "-10px" }}>{tourDate.venue}</p>
-              <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.guests}</p>
+              <p className="tourDateFont1">{tourDate.location}</p>
+              <p className="tourDateFont2">{tourDate.venue}</p>
+              <p className="tourDateFont3">{tourDate.guests}</p>
             </div>
             </div>
             <div className={classes.buttonDiv}>
@@ -192,7 +190,7 @@ export default function SecondComponent() {
                 classes={{
                   root: classes.buttonSecond,
                 }}
-                className="tourDateFont" 
+                className="tourDateButton" 
               >
                 VIP
               </Button>
@@ -200,7 +198,7 @@ export default function SecondComponent() {
                 classes={{
                   root: classes.buttonRoot,
                 }}
-                className="tourDateFont" 
+                className="tourDateButton" 
               >
                 TICKETS
               </Button>

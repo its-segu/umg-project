@@ -11,7 +11,7 @@ import AudioPlayer from "react-h5-audio-player";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import Logo from "../../assets/Logo.png";
 
-const navigation = ["", "MGMT", "TOUR DATES", "VIDEOS", "MERCH", "ANALYTICS"];
+const navigation = ["", "MGMT", "TOUR", "VIDEOS", "SHOP", "STATS"];
 
 import "./index.css";
 
