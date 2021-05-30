@@ -191,7 +191,7 @@ const FifthComponent = () => {
           backgroundColor: "#333",
           color: "white",
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-end",
           justifyContent: "center",
         }}
       >

@@ -148,10 +148,10 @@ body {
   border: none;
   background-color: transparent;
   margin-right: 50px;
-  font-size: 16px;
+  font-size: 17px;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 .fontfam {
   font-family: "Permanent Marker", cursive;
@@ -162,6 +162,7 @@ body {
 .pager li > a:hover {
   text-decoration: none;
   background-color: transparent;
+  border-radius: 50;
   border: 2px solid #ff4ee1;
   /* color:#ff4ee1 ; */
 }
@@ -310,6 +311,10 @@ body {
   margin: auto;
   overflow: hidden;
   height: 100%;
+}
+
+.content-text {
+  font-size: 30px;
 }
 
 .content .content-overlay {

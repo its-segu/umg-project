@@ -5,7 +5,7 @@ export default () => {
     <div className="component third-component">
       <div
         style={{
-          height: "20%",
+          height: "10%",
           backgroundColor: "black",
           color: "white",
           display: "flex",
@@ -13,7 +13,7 @@ export default () => {
           justifyContent: "center",
         }}
       >
-        <h1 className="fontfam">Videos</h1>
+        {/* <h1 className="fontfam">Videos</h1> */}
       </div>
       <iframe
         width="100%"

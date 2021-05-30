@@ -38,7 +38,10 @@ const useStyles = makeStyles(theme => ({
     marginBottom: 2,
     borderBottom: "5px solid white",
     paddingLeft: 20,
-    paddingRight: 10
+    paddingRight: 10,
+    "&:hover": {
+      backgroundColor: 'rgb(111 111 111 / 42%)'
+    }
   },
   tourDateTitle: {
     backgroundColor: "transparent",
@@ -176,12 +179,12 @@ export default function SecondComponent() {
             <div style={{display: "flex", flexDirection:"row", alignItems: "left"}}>
             <div style={{ marginRight: 30 }}>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.day}</p>
-              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 40, marginBottom: "-10px" }}>{tourDate.date}</p>
+              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 35, marginBottom: "-10px" }}>{tourDate.date}</p>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.year}</p>
             </div>
             <div>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25, marginBottom: "-10px" }}>{tourDate.location}</p>
-              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 40, marginBottom: "-10px" }}>{tourDate.venue}</p>
+              <p className="tourDateFont" style={{ color: "white", fontWeight: "600", fontSize: 35, marginBottom: "-10px" }}>{tourDate.venue}</p>
               <p className="tourDateFont" style={{ color: "#E68FD5", fontWeight: "400", fontSize: 25 }}>{tourDate.guests}</p>
             </div>
             </div>
