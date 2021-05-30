@@ -97,6 +97,7 @@ const FifthComponent = () => {
           .then(trackresponse => {
             console.log(trackresponse.data.tracks);
             setTracks(trackresponse.data.tracks);
+            // setImage(trackresponse.data.tracks[0].album.images[0].url)
           })
           .catch(error => console.log(error));
       })
@@ -187,7 +188,7 @@ const FifthComponent = () => {
             <div
         style={{
           height: "20%",
-          backgroundColor: "#373737",
+          backgroundColor: "#333",
           color: "white",
           display: "flex",
           alignItems: "center",

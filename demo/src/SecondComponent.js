@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
     height: "100%",
-    backgroundColor: "#373737",
+    backgroundColor: "#333",
   },
   scroll: {
     overflowX: "scroll",
@@ -169,6 +169,7 @@ export default function SecondComponent() {
       </div>
       <div className={classes.scroll}>
         {tourDates.map((tourDate, i) => (
+          <div>
           <div key={i} className={classes.tourDate}>
             <div style={{display: "flex", flexDirection:"row", alignItems: "left"}}>
             <div style={{ marginRight: 30 }}>
@@ -198,6 +199,7 @@ export default function SecondComponent() {
                 TICKETS
               </Button>
             </div>
+          </div>
           </div>
         ))}
       </div>

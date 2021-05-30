@@ -76,8 +76,17 @@ html, body {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: row;
     background-image: url("../../assets/Scenic.png") no-repeat center center;
-    background-image: linear-gradient(to Bottom, #d861c431, #f766aab6), url("../../assets/park-sm.png");
+    /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/park-sm.png'); */
+        /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Ferris-Wheel.png'); */
+        /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
+
+        /* background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
+        background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(187, 152, 190, 0.74)), url('../../assets/Arcade.jpg');
+
+
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -102,8 +111,8 @@ html, body {
     margin-right: 50px;
     font-size: 15px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 500;
 
 }
 .fontfam {
@@ -120,7 +129,7 @@ html, body {
     height: 100%;
     width: 100%;
     display: flex;
-    background-color: #373737;
+    background-color: #333;
 }
 
 .component.third-component {
@@ -151,7 +160,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: "center";
-    background-color: #373737;
+    background-color: #333;
 }
 
 .component.fifth-component {
@@ -160,7 +169,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #373737;
+  background-color: #333;
 }
 
 h2 {

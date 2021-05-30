@@ -15,10 +15,6 @@ export default () => {
   useEffect(() => {
     AOS.init({
       duration : 1500,
-      // offset: 200,
-      // duration: 600,
-      // easing: 'ease-in-sine',
-      // delay: 100,
     });
   }, []);
 
@@ -26,7 +22,7 @@ export default () => {
     <div className="component first-component">
       <motion.img
         src={mgmt}
-        style={{ opacity: .95 }}
+        style={{ opacity: "100%" }}
         height={750}
         width={750}
         data-aos="fade-down"
@@ -37,8 +33,7 @@ export default () => {
         // animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       />
 
-      <div className="banner"
-      
+      {/* <div className="banner"
         data-aos="fade-up"
         style={{opacity: .64}}
       >
@@ -68,7 +63,7 @@ export default () => {
             June 2nd
           </h2>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
