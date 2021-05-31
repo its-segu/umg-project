@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import Plot from "react-plotly.js";
 import axios from "axios";
 import Chart from "react-apexcharts";
+import Button from '@material-ui/core/Button';
 
-const FifthComponent = () => {
+
+const FifthComponent = (props) => {
   // Set up states for retrieving access token and top tracks
   const [token, setToken] = useState("");
   const [tracks, setTracks] = useState([]);
   const [pop, setPop] = useState([]);
   const [names, setNames] = useState([]);
+
 
   const [data, setData] = useState({
     options: {
@@ -188,9 +191,12 @@ const FifthComponent = () => {
           width="100%"
         />
       </div>
-      {/* <div className="" style={{display: flex, }}>
-        <button style={{}}>Home</button>
-      </div> */}
+      <div style={{display: "flex", justifyContent: "flex-end", zIndex: 1000, marginTop: "-30px"}}>
+      <Button variant="contained" color="primary" style={{padding: 30, borderRadius: 50}} onClick={props.onClick}>
+        Primary
+       </Button>
+      </div>
+
     </div>
   );
 };

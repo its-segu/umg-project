@@ -33,6 +33,7 @@ export default class FullPage extends React.Component {
 
   getPagesNumbers = () => {
     const pageNumbers = [];
+    
 
     for (let i = 1; i < navigation.length; i++) {
       pageNumbers.push(
@@ -45,6 +46,12 @@ export default class FullPage extends React.Component {
 
     return [...pageNumbers];
   };
+
+
+   scrollToTop = () => {
+    console.log("clicked")
+    this.setState({ currentPage: 0 });
+  }
 
   render() {
     const pagesNumbers = this.getPagesNumbers();
@@ -60,7 +67,7 @@ export default class FullPage extends React.Component {
           <SecondComponent />
           <ThirdComponent />
           <FourthComponent />
-          <FifthComponent />
+          <FifthComponent onClick={this.scrollToTop}/>
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
           <img src={Logo} className="main-logo" height={32} />

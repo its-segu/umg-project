@@ -24,6 +24,7 @@ const useStyles = makeStyles(theme => ({
   scroll: {
     overflowX: "scroll",
     height: "80%",
+    overscrollBehavior: "contain"
   },
   tourDate: {
     backgroundColor: "transparent",
