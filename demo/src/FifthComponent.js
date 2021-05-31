@@ -193,12 +193,13 @@ const FifthComponent = props => {
         />
       </div>
       <div
-        style={{
+        className="scroll-button"
+        // style={{
             
-            marginTop: "-100px",
-            marginBottom: "100px",
-            marginRight: "100px",
-        }}
+        //     marginTop: "-100px",
+        //     marginBottom: "100px",
+        //     marginRight: "100px",
+        // }}
       >
         <Button
           boxShadow={3}
