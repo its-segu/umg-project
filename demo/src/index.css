@@ -12,6 +12,7 @@ body {
   overflow: hidden;
 }
 
+
 .bannerWrapper {
   display: flex;
   flex-direction: row;
@@ -29,7 +30,7 @@ body {
 
 
 .audio-player {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .tourDateFont1 {
@@ -257,7 +258,7 @@ body {
 }
 
 .albumImage {
-  background-image: url("./assets/Album.png");
+  background-image: url("./assets/mgmt_art.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -271,7 +272,7 @@ body {
 .albumBanner {
   background-color: white;
   margin-left: 3em;
-  opacity: 64%;
+  opacity: 95%;
   align-items: center;
   padding: 20px;
 }

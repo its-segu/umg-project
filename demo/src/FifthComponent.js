@@ -2,16 +2,17 @@ import React, { useEffect, useState } from "react";
 import Plot from "react-plotly.js";
 import axios from "axios";
 import Chart from "react-apexcharts";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
+import IconButton from "@material-ui/core/IconButton";
 
-
-const FifthComponent = (props) => {
+const FifthComponent = props => {
   // Set up states for retrieving access token and top tracks
   const [token, setToken] = useState("");
   const [tracks, setTracks] = useState([]);
   const [pop, setPop] = useState([]);
   const [names, setNames] = useState([]);
-
 
   const [data, setData] = useState({
     options: {
@@ -191,12 +192,29 @@ const FifthComponent = (props) => {
           width="100%"
         />
       </div>
-      <div style={{display: "flex", justifyContent: "flex-end", zIndex: 1000, marginTop: "-30px"}}>
-      <Button variant="contained" style={{padding: 30, borderRadius: 50, backgroundColor: "#333"}} onClick={props.onClick}>
-        Primary
-       </Button>
+      <div
+        style={{
+            
+            marginTop: "-100px",
+            marginBottom: "100px",
+            marginRight: "100px",
+        }}
+      >
+        <Button
+          boxShadow={3}
+          variant="contained"
+          style={{
+            padding: 30,
+            borderRadius: 50,
+            backgroundColor: "rgb(70 69 69)",
+            float: "right",
+            
+          }}
+          onClick={props.onClick}
+        >
+          <ArrowUpwardIcon style={{ color: "white", fontSize: 30 }} />
+        </Button>
       </div>
-
     </div>
   );
 };
