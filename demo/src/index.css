@@ -43,23 +43,29 @@ body {
   font-family: "Roboto", sans-serif;
   color: #e68fd5;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 23px;
   margin-bottom: -10px;
+}
+
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  box-shadow: none;
 }
 
 .tourDateFont2 {
   font-family: "Roboto", sans-serif;
   color: white;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 32px;
   margin-bottom: -10px;
 }
 
 .tourDateFont3 {
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #e68fd5;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 23px;
   /* margin-bottom:  */
 }
 
@@ -90,6 +96,27 @@ body {
   .mixed-chart {
     margin: auto;
     width: 80%;
+  },
+  .tourDateFont1 {
+    font-family: "Roboto", sans-serif;
+    color: #e68fd5;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: -0px;
+  }
+
+  .tourDateFont2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: -10px;
+    line-height: initial;
+  }
+
+  .tourDateFont3 {
+    display: none;
+    /* margin-bottom:  */
   }
 }
 
