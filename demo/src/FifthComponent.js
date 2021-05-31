@@ -7,6 +7,9 @@ const FifthComponent = () => {
   // Set up states for retrieving access token and top tracks
   const [token, setToken] = useState("");
   const [tracks, setTracks] = useState([]);
+  const [pop, setPop] = useState([]);
+  const [names, setNames] = useState([]);
+
   const [data, setData] = useState({
     options: {
       chart: {
@@ -97,14 +100,17 @@ const FifthComponent = () => {
             console.log(trackresponse.data.tracks);
             setTracks(trackresponse.data.tracks);
             // setImage(trackresponse.data.tracks[0].album.images[0].url)
+            PopularityByTrack(trackresponse.data.tracks)
           })
           .catch(error => console.log(error));
       })
       .catch(error => console.log(error));
+      // PopularityByTrack(tracks)
   }, []);
 
   // Transform track data
   function PopularityByTrack(data) {
+    console.log(data)
     let plotData = [];
 
     let names = [];
@@ -118,71 +124,58 @@ const FifthComponent = () => {
     plotData["names"] = names;
     plotData["popularity"] = popularity;
 
-    return plotData;
+    setData({ options: {
+      chart: {
+        id: "basic-bar",
+      },
+      colors: ["#F8D7BD", "#546E7A", "#d4526e"],
+      xaxis: {
+        categories: names,
+        labels: {
+          style: {
+            colors: "white",
+            fontSize: "12px",
+          },
+        },
+      },
+      yaxis: {
+        axisBorder: {
+          show: false,
+        },
+        axisTicks: {
+          show: false,
+        },
+        labels: {
+          style: {
+            fontSize: "12px",
+            colors: ["white"],
+          },
+        },
+      },
+    },
+    crosshairs: {
+      fill: {
+        type: "gradient",
+        gradient: {
+          colorFrom: "#D8E3F0",
+          colors: "red",
+          stops: [0, 100],
+          opacityFrom: 0.4,
+          opacityTo: 0.5,
+        },
+      },
+    },
+    series: [
+      {
+        name: "series-1",
+        data: popularity,
+      },
+    ],})
+
+
   }
 
   return (
-    // <div >
-    //   <Plot
-    //     data={[
-    //       {
-    //         type: "bar",
-    //         x: PopularityByTrack(tracks)["names"],
-    //         y: PopularityByTrack(tracks)["popularity"],
-    //         marker: { color: "#03fc6b" },
-    //       },
-    //     ]}
-    //     layout={{
-    //       width: "100%",
-    //       height: "100%",
-    //       // title: 'Taylor Swfit Top Tracks'
-    //       title: "<b>Taylor Swift Top Tracks</b> <br> <sub>US Market</sub>",
-    //       margin: {
-    //         l: 100,
-    //         r: 100,
-    //         b: 150,
-    //         t: 150,
-    //         pad: 4,
-    //       },
-    //       paper_bgcolor: "#919191",
-    //       plot_bgcolor: "#919191",
-    //       font: {
-    //         family: "Newsreader, serif",
-    //         size: 20,
-    //         color: "white",
-    //       },
-    //       xaxis: {
-    //         title: "Name",
-    //         titlefont: {
-    //           family: "Arial, sans-serif",
-    //           size: 12,
-    //           color: "white",
-    //         },
-    //         showticklabels: false,
-    //         tickfont: {
-    //           family: "Arial, sans-serif",
-    //           size: 12,
-    //           color: "white",
-    //         },
-    //       },
-    //       yaxis: {
-    //         title: "Popularity",
-    //         titlefont: {
-    //           family: "Arial, sans-serif",
-    //           size: 12,
-    //           color: "white",
-    //         },
-    //         showticklabels: true,
-    //         tickfont: {
-    //           family: "Arial, sans-serif",
-    //           size: 12,
-    //           color: "white",
-    //         },
-    //       },
-    //       hovermode: "closest",
-    //     }}
-    //   />
-    // </div>
     <div className="component fifth-component">
       <div className="fifth-title">
         <h1 className="fontfam2">Songs By Popularity</h1>
