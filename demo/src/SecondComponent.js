@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   },
   tourDate: {
     backgroundColor: "transparent",
-    height: "25%",
+    height: "23%",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",

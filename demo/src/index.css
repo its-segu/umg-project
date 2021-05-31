@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet');
 @import url("https://fonts.googleapis.com/css?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet");
 
 html,
@@ -27,6 +26,7 @@ body {
   height: 650px;
   width: 650px;
 }
+
 
 .audio-player {
   margin-bottom: 20px;
@@ -87,6 +87,15 @@ body {
 }
 
 @media screen and (max-width: 675px) {
+  div > .pagination-additional-class {
+    justify-content: center;
+  }
+
+
+  .pagination-additional-class > .main-logo {
+    display: none;
+    }
+
   .fifth-title {
     height: 40%;
     background-color: #333;
@@ -230,12 +239,13 @@ body {
   /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
 
   /* background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to Bottom,
       rgba(72, 144, 167, 0.425),
       rgba(187, 152, 190, 0.74)
     ),
-    url("../../assets/Arcade.jpg");
+    url("../../assets/Arcade.jpg"); */
+    background-image: linear-gradient( to Bottom, rgba(72, 144, 167, 0.425), rgb(151 117 154 / 74%) ), url("../../assets/Arcade.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -280,7 +290,7 @@ body {
   font-size: 17px;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 .fontfam {
   font-family: "Permanent Marker", cursive;
@@ -294,7 +304,7 @@ body {
   text-decoration: none;
   background-color: transparent;
   border-radius: 50;
-  border: 2px solid #ff4ee1;
+  border: 3px solid #ff4ee1;
   /* color:#ff4ee1 ; */
 }
 
@@ -364,7 +374,7 @@ h2 {
   position: fixed;
   top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 

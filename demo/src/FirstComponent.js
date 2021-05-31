@@ -24,7 +24,7 @@ export default () => {
           className="imageFirstComp"
           data-aos="fade-down"
         />
-        <div className="albumBanner" >
+        <div className="albumBanner" data-aos="fade-up" style={{opacity: .64}}>
         <h1 className="permanent-mark" style={{marginTop: -10, fontSize: 40, marginBottom: 20}}>New Release</h1>
           <div className="albumImage">
           <div>
@@ -62,7 +62,7 @@ export default () => {
             }}
           />
           
-          <h1 className="permanent-mark" style={{ textAlign: "right", color: "white" }}>
+          <h1 className="permanent-mark" style={{ textAlign: "right", color: "white", marginBottom: "0px"}}>
             "The Handshake"
           </h1>
           <h2 className="permanent-mark" style={{ textAlign: "right", color: "white" }}>

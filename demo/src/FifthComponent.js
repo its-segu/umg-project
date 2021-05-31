@@ -61,7 +61,6 @@ const FifthComponent = () => {
   });
 
   // Artist ID from Spotify
-  // https://open.spotify.com/artist/0SwO7SWeDHJijQ3XNS7xEE?si=GqvUghTgQq6GoP2NfqNWFA
   const id = "0SwO7SWeDHJijQ3XNS7xEE";
   const market = "US";
 
@@ -101,17 +100,17 @@ const FifthComponent = () => {
             console.log(trackresponse.data.tracks);
             setTracks(trackresponse.data.tracks);
             // setImage(trackresponse.data.tracks[0].album.images[0].url)
-            PopularityByTrack(trackresponse.data.tracks)
+            PopularityByTrack(trackresponse.data.tracks);
           })
           .catch(error => console.log(error));
       })
       .catch(error => console.log(error));
-      // PopularityByTrack(tracks)
+    // PopularityByTrack(tracks)
   }, []);
 
   // Transform track data
   function PopularityByTrack(data) {
-    console.log(data)
+    console.log(data);
     let plotData = [];
 
     let names = [];
@@ -125,55 +124,55 @@ const FifthComponent = () => {
     plotData["names"] = names;
     plotData["popularity"] = popularity;
 
-    setData({ options: {
-      chart: {
-        id: "basic-bar",
-      },
-      colors: ["#F8D7BD", "#546E7A", "#d4526e"],
-      xaxis: {
-        categories: names,
-        labels: {
-          style: {
-            colors: "white",
-            fontSize: "12px",
+    setData({
+      options: {
+        chart: {
+          id: "basic-bar",
+        },
+        colors: ["#F8D7BD", "#546E7A", "#d4526e"],
+        xaxis: {
+          categories: names,
+          labels: {
+            style: {
+              colors: "white",
+              fontSize: "12px",
+            },
+          },
+        },
+        yaxis: {
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          labels: {
+            style: {
+              fontSize: "12px",
+              colors: ["white"],
+            },
           },
         },
       },
-      yaxis: {
-        axisBorder: {
-          show: false,
-        },
-        axisTicks: {
-          show: false,
-        },
-        labels: {
-          style: {
-            fontSize: "12px",
-            colors: ["white"],
+      crosshairs: {
+        fill: {
+          type: "gradient",
+          gradient: {
+            colorFrom: "#D8E3F0",
+            colors: "red",
+            stops: [0, 100],
+            opacityFrom: 0.4,
+            opacityTo: 0.5,
           },
         },
       },
-    },
-    crosshairs: {
-      fill: {
-        type: "gradient",
-        gradient: {
-          colorFrom: "#D8E3F0",
-          colors: "red",
-          stops: [0, 100],
-          opacityFrom: 0.4,
-          opacityTo: 0.5,
+      series: [
+        {
+          name: "Popularity (1-100)",
+          data: popularity,
         },
-      },
-    },
-    series: [
-      {
-        name: "Popularity (1-100)",
-        data: popularity,
-      },
-    ],})
-
-
+      ],
+    });
   }
 
   return (
@@ -189,6 +188,9 @@ const FifthComponent = () => {
           width="100%"
         />
       </div>
+      {/* <div className="" style={{display: flex, }}>
+        <button style={{}}>Home</button>
+      </div> */}
     </div>
   );
 };

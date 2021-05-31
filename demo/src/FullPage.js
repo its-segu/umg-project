@@ -63,8 +63,8 @@ export default class FullPage extends React.Component {
           <FifthComponent />
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
-          <img src={Logo} style={{ fontColor: "red" }} height={32} />
-          {/* <div> */}
+          <img src={Logo} className="main-logo" height={32} />
+          {/* <div style={{display: "flex", justifyContent: "center"}}> */}
           {pagesNumbers}
           {/* </div> */}
           {/* <AudioPlayer
