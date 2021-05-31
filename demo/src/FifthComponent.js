@@ -61,7 +61,8 @@ const FifthComponent = () => {
   });
 
   // Artist ID from Spotify
-  const id = "06HL4z0CvFAxyc27GXpf02";
+  // https://open.spotify.com/artist/0SwO7SWeDHJijQ3XNS7xEE?si=GqvUghTgQq6GoP2NfqNWFA
+  const id = "0SwO7SWeDHJijQ3XNS7xEE";
   const market = "US";
 
   useEffect(() => {
@@ -167,7 +168,7 @@ const FifthComponent = () => {
     },
     series: [
       {
-        name: "series-1",
+        name: "Popularity (1-100)",
         data: popularity,
       },
     ],})
