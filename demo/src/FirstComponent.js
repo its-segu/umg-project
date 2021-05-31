@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import mgmt from "../../assets/MGMT.svg";
-import album from "../../assets/Album.png";
+import mgmt from "./assets/MGMT.svg";
+import album from "./assets/Album.png";
 import { motion } from "framer-motion";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import AudioPlayer from "react-h5-audio-player";
@@ -32,7 +32,7 @@ export default () => {
             // autoPlay
             className="audio-player"
             
-            src="../../assets/TheHandshake.mp3"
+            src="./assets/TheHandshake.mp3"
             onPlay={e => console.log("onPlay")}
             showJumpControls={false}
             showFilledVolume={false}

@@ -9,7 +9,7 @@ import FifthComponent from "./FifthComponent";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import AudioPlayer from "react-h5-audio-player";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
-import Logo from "../../assets/Logo.png";
+import Logo from "./assets/Logo.png";
 
 const navigation = ["", "MGMT", "TOUR", "VIDEOS", "SHOP", "STATS"];
 

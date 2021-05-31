@@ -12,7 +12,7 @@ class Demo extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="title">React Page Scroller Demo</h1>
+        {/* <h1 className="title">React Page Scroller Demo</h1>
         <div className="links">
           <div className="link">
             <Link to="/fullpage">Full page demo</Link>
@@ -20,7 +20,8 @@ class Demo extends React.Component {
           <div className="link">
             <Link to="/contain">Page contain demo</Link>
           </div>
-        </div>
+        </div> */}
+        <FullPage/>
       </div>
     );
   }

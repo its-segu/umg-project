@@ -192,7 +192,7 @@ const FifthComponent = (props) => {
         />
       </div>
       <div style={{display: "flex", justifyContent: "flex-end", zIndex: 1000, marginTop: "-30px"}}>
-      <Button variant="contained" color="primary" style={{padding: 30, borderRadius: 50}} onClick={props.onClick}>
+      <Button variant="contained" style={{padding: 30, borderRadius: 50, backgroundColor: "#333"}} onClick={props.onClick}>
         Primary
        </Button>
       </div>
