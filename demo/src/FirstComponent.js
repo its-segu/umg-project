@@ -25,15 +25,15 @@ export default () => {
   return (
     <div className="component first-component">
       <div className="bannerWrapper">
-        <img  src={mgmt} className="imageFirstComp pulse" style={{ opacity: 0.90 }} data-aos="fade-down" />
+        <img  src={mgmt} className="imageFirstComp pulse" style={{ opacity: 0.95 }} data-aos="fade-down" />
         <div
           className="albumBanner pulse"
           data-aos="fade-up"
           style={{ opacity: 0.64 }}
-       
+
         >
           <div className="albumImage">
-            <motion.div 
+            <motion.div
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1 }}
             >
