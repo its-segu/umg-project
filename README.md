@@ -15,7 +15,9 @@ App will start on localhost:3000.
 
 - Spotify API
 - Framer motion
-- react-page-scroller
+- React-page-scroller
+- Axios
+- Material UI
 
 
 
