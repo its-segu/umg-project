@@ -13,7 +13,6 @@ export default () => {
           justifyContent: "center",
         }}
       >
-        {/* <h1 className="fontfam">Videos</h1> */}
       </div>
       <iframe
         width="100%"

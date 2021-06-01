@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect, useCallback, updateState } from "react";
 import "./index.css";
-
 import { makeStyles } from "@material-ui/core/styles";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
@@ -15,8 +14,8 @@ import Button from "@material-ui/core/Button";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
 import TextField from "@material-ui/core/TextField";
+import { useMediaQuery } from 'react-responsive'
 
-// import useGlobal from "../store";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,16 +24,16 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#333",
   },
   textField: {
-    width: '90%',
-    marginLeft: 'auto',
-    marginRight: 'auto',            
+    width: "90%",
+    marginLeft: "auto",
+    marginRight: "auto",
     paddingBottom: 0,
     marginTop: 0,
-    fontWeight: 500
-},
-input: {
-    color: 'white'
-},
+    fontWeight: 500,
+  },
+  input: {
+    color: "white",
+  },
   scroll: {
     overflowX: "scroll",
     height: "80%",
@@ -42,7 +41,7 @@ input: {
   },
   tourDate: {
     backgroundColor: "transparent",
-    height: "21%",
+    height: "20%",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
@@ -94,15 +93,6 @@ input: {
     "&:hover": {
       backgroundColor: "#47d5dc",
     },
-
-  //   searchInput: {
-  //     "&:focus": {
-  // border: "none",
-  // outline: "none",
-  // boxShadow: "none",
-
-  //     }
-  //   }
   },
 }));
 
@@ -184,7 +174,7 @@ export default function SecondComponent() {
   const handleSearchChange = e => {
     setSearchTerm(e.target.value);
   };
-  
+
   useEffect(() => {
     var results = tourDates.filter(function(o) {
       return Object.keys(o).some(function(k) {
@@ -203,19 +193,27 @@ export default function SecondComponent() {
   return (
     <div className={classes.root}>
       <div className={classes.tourDateTitle}>
-        <div style={{ width: 250}}></div>
+        <div style={{ width: 250 }}></div>
         <h1 className="fontfam" style={{ paddingTop: 30 }}>
           TOUR DATES
         </h1>
         <input
           label="Search"
           variant="outlined"
-          type="search" 
+          type="search"
           placeholder="Search"
           value={searchTerm}
           onChange={handleSearchChange}
           className="searchInput"
-          style={{borderRadius: 50, width: 250, height: 50, color: "black", padding: 20, marginTop:30}}
+          style={{
+            borderRadius: 50,
+            width: 250,
+            height: 50,
+            color: "black",
+            padding: 20,
+            marginTop: 30,
+            marginRight: 10,
+          }}
         />
       </div>
       <div className={classes.scroll}>

@@ -10,7 +10,6 @@ import FifthComponent from "./FifthComponent";
 
 import "./index.css";
 
-
 export default class PageContain extends React.Component {
   constructor(props) {
     super(props);

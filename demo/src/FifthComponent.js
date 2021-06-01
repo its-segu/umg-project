@@ -8,11 +8,8 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import IconButton from "@material-ui/core/IconButton";
 
 const FifthComponent = props => {
-  // Set up states for retrieving access token and top tracks
   const [token, setToken] = useState("");
   const [tracks, setTracks] = useState([]);
-  const [pop, setPop] = useState([]);
-  const [names, setNames] = useState([]);
 
   const [data, setData] = useState({
     options: {
@@ -103,16 +100,13 @@ const FifthComponent = props => {
           .then(trackresponse => {
             console.log(trackresponse.data.tracks);
             setTracks(trackresponse.data.tracks);
-            // setImage(trackresponse.data.tracks[0].album.images[0].url)
             PopularityByTrack(trackresponse.data.tracks);
           })
           .catch(error => console.log(error));
       })
       .catch(error => console.log(error));
-    // PopularityByTrack(tracks)
   }, []);
 
-  // Transform track data
   function PopularityByTrack(data) {
     console.log(data);
     let plotData = [];
@@ -125,8 +119,8 @@ const FifthComponent = props => {
       popularity.push(each.popularity);
     });
 
-    plotData["names"] = names;
-    plotData["popularity"] = popularity;
+    // plotData["names"] = names;
+    // plotData["popularity"] = popularity;
 
     setData({
       options: {
@@ -192,15 +186,7 @@ const FifthComponent = props => {
           width="100%"
         />
       </div>
-      <div
-        className="scroll-button"
-        // style={{
-            
-        //     marginTop: "-100px",
-        //     marginBottom: "100px",
-        //     marginRight: "100px",
-        // }}
-      >
+      <div className="scroll-button">
         <Button
           boxShadow={3}
           variant="contained"
@@ -209,7 +195,6 @@ const FifthComponent = props => {
             borderRadius: 50,
             backgroundColor: "rgb(70 69 69)",
             float: "right",
-            
           }}
           onClick={props.onClick}
         >
