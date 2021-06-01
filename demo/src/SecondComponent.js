@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "space-between",
     color: "black",
     marginBottom: 2,
-    borderBottom: "5px solid white",
+    borderBottom: "2px solid white",
     paddingLeft: 20,
     paddingRight: 10,
 
@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "space-between",
     color: "white",
     marginBottom: 2,
-    borderBottom: "5px solid white",
+    borderBottom: "2px solid white",
   },
   buttonDiv: {
     display: "flex",
