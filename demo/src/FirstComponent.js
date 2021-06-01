@@ -25,22 +25,20 @@ export default () => {
   return (
     <div className="component first-component">
       <div className="bannerWrapper">
-        <img src={mgmt} className="imageFirstComp" data-aos="fade-down" />
+        <img  src={mgmt} className="imageFirstComp pulse" data-aos="fade-down" />
         <div
-          className="albumBanner"
+          className="albumBanner pulse"
           data-aos="fade-up"
           style={{ opacity: 0.64 }}
+       
         >
-          <h1
-            className="permanent-mark"
-            style={{ marginTop: -10, fontSize: 40, marginBottom: 30 }}
-          >
-            New Release
-          </h1>
           <div className="albumImage">
-            <div>
+            <motion.div 
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            >
               <AudioPlayer
-                // autoPlay
+                autoPlay
                 className="audio-player"
                 src={Soundfile}
                 onPlay={e => console.log("onPlay")}
@@ -72,27 +70,10 @@ export default () => {
                   ),
                 }}
               />
-              {/* <div  style={{ }}>
-              <h1
-                className="permanent-mark"
-                style={{
-                  textAlign: "right",
-                  color: "white",
-                  marginBottom: "0px",
-                }}
-              >
-                "The Handshake"
-              </h1>
-              <h2
-                className="permanent-mark"
-                style={{ textAlign: "right", color: "white", opacity: 100 }}
-              >
-                June 2nd
-              </h2>
-              </div> */}
-            </div>
+            </motion.div>
           </div>
           <h1
+          data-aos="fade-right"
             className="permanent-mark"
             style={{
               textAlign: "right",
@@ -120,7 +101,7 @@ export default () => {
             style={{
               display: "flex",
               flexDirection: "row",
-              marginTop: 30,
+              marginTop: 40,
               justifyContent: "center",
             }}
           >
@@ -158,38 +139,6 @@ export default () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="banner"
-        data-aos="fade-right"
-        style={{opacity: .64}}
-      >
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          <img
-            src={album}
-            style={{ fontColor: "red" }}
-            height={180}
-            width={180}
-            style={{ padding: 20 }}
-          />
-          <h1 className="permanent-mark">New Release</h1>
-        </div>
-        <div style={{ paddingRight: 30 }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              textAlign: "right",
-              paddingRight: 30,
-            }}
-          ></div>
-          <h1 className="permanent-mark" style={{ textAlign: "right" }}>
-            "The Handshake"
-          </h1>
-          <h2 className="permanent-mark" style={{ textAlign: "right" }}>
-            June 2nd
-          </h2>
-        </div>
-      </div>  */}
     </div>
   );
 };

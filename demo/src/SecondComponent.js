@@ -42,7 +42,7 @@ input: {
   },
   tourDate: {
     backgroundColor: "transparent",
-    height: "23%",
+    height: "21%",
     cursor: "pointer",
     display: "flex",
     alignItems: "center",
@@ -216,18 +216,6 @@ export default function SecondComponent() {
           onChange={handleSearchChange}
           className="searchInput"
           style={{borderRadius: 50, width: 250, height: 50, color: "black", padding: 20, marginTop:30}}
-          // InputProps={{
-         
-          //   endAdornment: (
-          //     <InputAdornment>
-          //       <IconButton>
-          //         <SearchIcon />
-          //       </IconButton>
-          //     </InputAdornment>
-          //   ),
-            
-            
-          // }}
         />
       </div>
       <div className={classes.scroll}>

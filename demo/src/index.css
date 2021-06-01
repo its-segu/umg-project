@@ -39,6 +39,8 @@ body {
   margin-bottom: 60px;
 }
 
+
+
 .tourDateFont1 {
   font-family: "Roboto", sans-serif;
   color: #e68fd5;
@@ -57,7 +59,7 @@ input:focus, textarea:focus, select:focus{
   font-family: "Roboto", sans-serif;
   color: white;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: -10px;
 }
 
@@ -271,21 +273,9 @@ input:focus, textarea:focus, select:focus{
   height: 100%;
   width: 100%;
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   background-image: url("./assets/Scenic.png") no-repeat center center;
-  /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/park-sm.png'); */
-  /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Ferris-Wheel.png'); */
-  /* background-image: linear-gradient(to Bottom, rgba(214, 110, 197, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
-
-  /* background-image: linear-gradient(to Bottom, rgba(72, 144, 167, 0.425), rgba(190,152,152,.74)), url('../../assets/Arcade.jpg'); */
-  /* background-image: linear-gradient(
-      to Bottom,
-      rgba(72, 144, 167, 0.425),
-      rgba(187, 152, 190, 0.74)
-    ),
-    url("../../assets/Arcade.jpg"); */
-    background-image: linear-gradient( to Bottom, rgba(72, 144, 167, 0.425), rgb(151 117 154 / 74%) ), url("./assets/Arcade.jpg");
+  background-image: linear-gradient( to Bottom, rgba(72, 144, 167, 0.425), rgb(151 117 154 / 74%) ), url("./assets/Arcade.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -293,7 +283,6 @@ input:focus, textarea:focus, select:focus{
   background-size: cover;
   flex-direction: column;
   align-items: center;
-  /* position: relative; */
 }
 
 .albumImage {
@@ -315,6 +304,15 @@ input:focus, textarea:focus, select:focus{
   align-items: center;
   padding: 20px;
 }
+
+/* .albumBanner:hover {
+  background-color: white;
+  margin-left: 1em;
+  opacity: 95%;
+  align-items: center;
+  padding: 20px;
+  transition: margin 5s ease;
+} */
 
 .first-component--inside-scroller {
   /* position: absolute; */
@@ -467,8 +465,18 @@ body {
   padding: 0.7em 0;
 }
 
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
 .containerRow {
-  height: 45%;
+  height: 45.5%;
   width: 100%;
   display: flex;
   flex-direction: row;
