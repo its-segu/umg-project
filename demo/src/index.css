@@ -22,9 +22,9 @@ body {
 }
 
 .scroll-button {
-  margin-top: -100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
 }
 
 .imageFirstComp {
@@ -90,7 +90,7 @@ input:focus, textarea:focus, select:focus{
 
 @media screen and (max-width: 1100px) {
   .imageFirstComp {
-    opacity: 100%;
+    opacity: .85;
     height: 300px;
     width: 300px;
   }
@@ -261,7 +261,7 @@ input:focus, textarea:focus, select:focus{
   display: flex;
   justify-content: center;
   background-image: url("./assets/Scenic.png") no-repeat center center;
-  background-image: linear-gradient( to Bottom, rgba(58, 126, 148, 0.425), rgb(151 117 154 / 74%) ), url("./assets/Arcade.jpg");
+  background-image: linear-gradient( to Bottom, rgba(79, 140, 160, 0.527), rgb(151 117 154 / 74%) ), url("./assets/Arcade.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;

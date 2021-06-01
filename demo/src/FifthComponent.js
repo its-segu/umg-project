@@ -191,7 +191,7 @@ const FifthComponent = props => {
           boxShadow={3}
           variant="contained"
           style={{
-            padding: 30,
+            padding: 25,
             borderRadius: 50,
             backgroundColor: "rgb(70 69 69)",
             float: "right",
