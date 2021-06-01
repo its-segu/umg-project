@@ -25,7 +25,7 @@ export default () => {
   return (
     <div className="component first-component">
       <div className="bannerWrapper">
-        <img  src={mgmt} className="imageFirstComp pulse" style={{ opacity: 0.85 }} data-aos="fade-down" />
+        <img  src={mgmt} className="imageFirstComp pulse" style={{ opacity: 0.90 }} data-aos="fade-down" />
         <div
           className="albumBanner pulse"
           data-aos="fade-up"

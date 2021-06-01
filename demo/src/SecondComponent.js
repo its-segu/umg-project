@@ -208,7 +208,7 @@ export default function SecondComponent() {
           style={{
             borderRadius: 50,
             width: 250,
-            height: 50,
+            height: 30,
             color: "black",
             padding: 20,
             marginTop: 30,
