@@ -20,7 +20,6 @@ App will start on localhost:3000.
 - Material UI
 
 
-
 # Troubleshooting
 
 
@@ -30,6 +29,7 @@ npm install react react-dom --save
 
 ## Future changes
 
+- Animations, animations, animations!
 - Make navigation sidebar with Hamburger Icon
 - More responsiveness
 - Test on all screens sizes
