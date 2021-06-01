@@ -104,7 +104,7 @@ export default () => {
               justifyContent: "center",
             }}
           >
-            <a href="https://twitter.com/whoisMGMT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <a href="https://twitter.com/whoisMGMT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
               <img
                 src={Twitter}
                 height={40}
@@ -112,7 +112,7 @@ export default () => {
                 style={{ marginRight: 10, cursor: "pointer" }}
               />
             </a>
-            <a href="https://www.facebook.com/mgmt">
+            <a href="https://www.facebook.com/mgmt" target="_blank">
               <img
                 src={Facebook}
                 height={40}
@@ -120,7 +120,7 @@ export default () => {
                 style={{ marginRight: 10, cursor: "pointer" }}
               />
             </a>
-            <a href="https://soundcloud.com/whoismgmt">
+            <a href="https://soundcloud.com/whoismgmt" target="_blank">
               <img
                 src={Soundcloud}
                 height={40}
@@ -128,7 +128,7 @@ export default () => {
                 style={{ marginRight: 10, cursor: "pointer" }}
               />
             </a>
-            <a href="https://soundcloud.com/whoismgmt">
+            <a href="https://soundcloud.com/whoismgmt" target="_blank">
               <img
                 src={spotify}
                 height={40}
@@ -136,7 +136,7 @@ export default () => {
                 style={{ marginRight: 10, cursor: "pointer" }}
               />
             </a>
-            <a href="https://soundcloud.com/whoismgmt">
+            <a href="https://soundcloud.com/whoismgmt" target="_blank">
               <img
                 src={Itunes}
                 height={40}
