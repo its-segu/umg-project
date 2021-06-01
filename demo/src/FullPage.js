@@ -70,42 +70,8 @@ export default class FullPage extends React.Component {
           <FifthComponent onClick={this.scrollToTop}/>
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
-          <img src={Logo} className="main-logo" height={32} />
-          {/* <div style={{display: "flex", justifyContent: "center"}}> */}
+          <img src={Logo} className="main-logo" height={27} />
           {pagesNumbers}
-          {/* </div> */}
-          {/* <AudioPlayer
-            // autoPlay
-            style={{}}
-            src="../../assets/TheHandshake.mp3"
-            onPlay={e => console.log("onPlay")}
-            showJumpControls={false}
-            showFilledVolume={false}
-            customVolumeControls={[]}
-            customAdditionalControls={[]}
-            showFilledProgress={false}
-            showDownloadProgress={false}
-            customIcons={{
-              play: (
-                <PlayCircleOutlineIcon
-                  style={{
-                    fontSize: "30px",
-                    paddingTop: "5px",
-                    color: "white",
-                  }}
-                />
-              ),
-              pause: (
-                <PauseCircleFilledIcon
-                  style={{
-                    fontSize: "30px",
-                    paddingTop: "5px",
-                    color: "white",
-                  }}
-                />
-              ),
-            }}
-          /> */}
         </Pager>
       </React.Fragment>
     );
