@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Plot from "react-plotly.js";
 import axios from "axios";
 import Chart from "react-apexcharts";
 import Button from "@material-ui/core/Button";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import HighlightOffIcon from "@material-ui/icons/HighlightOff";
-import IconButton from "@material-ui/core/IconButton";
 
 const FifthComponent = props => {
   const [token, setToken] = useState("");

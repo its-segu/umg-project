@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import mgmt from "./assets/MGMT.svg";
-import album from "./assets/Album.png";
 import spotify from "./assets/spotify-logo.svg";
 import Itunes from "./assets/itunes.svg";
 import Twitter from "./assets/twitter.svg";
 import Facebook from "./assets/facebook.svg";
 import Soundcloud from "./assets/soundcloud-logo.svg";
-
 import { motion } from "framer-motion";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import AudioPlayer from "react-h5-audio-player";
@@ -25,18 +23,19 @@ export default () => {
   return (
     <div className="component first-component">
       <div className="bannerWrapper">
-        <img  src={mgmt} className="imageFirstComp pulse" style={{ opacity: 0.95 }} data-aos="fade-down" />
+        <img
+          src={mgmt}
+          className="imageFirstComp pulse"
+          style={{ opacity: 0.95 }}
+          data-aos="fade-down"
+        />
         <div
           className="albumBanner pulse"
           data-aos="fade-up"
           style={{ opacity: 0.64 }}
-       
         >
           <div className="albumImage">
-            <motion.div 
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            >
+            <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.1 }}>
               <AudioPlayer
                 autoPlay
                 className="audio-player"
@@ -73,7 +72,7 @@ export default () => {
             </motion.div>
           </div>
           <h1
-          data-aos="fade-right"
+            data-aos="fade-right"
             className="permanent-mark"
             style={{
               textAlign: "right",
@@ -105,12 +104,12 @@ export default () => {
               justifyContent: "center",
             }}
           >
-            <a src=""/>
+            <a src="" />
             <img
               src={Twitter}
               height={40}
               width={40}
-              style={{ marginRight: 10, cursor: "pointer"}}
+              style={{ marginRight: 10, cursor: "pointer" }}
             />
             <img
               src={Facebook}

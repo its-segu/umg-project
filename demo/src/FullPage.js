@@ -6,9 +6,6 @@ import SecondComponent from "./SecondComponent";
 import ThirdComponent from "./ThirdComponent";
 import FourthComponent from "./FourthComponent";
 import FifthComponent from "./FifthComponent";
-import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
-import AudioPlayer from "react-h5-audio-player";
-import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import Logo from "./assets/Logo.png";
 
 const navigation = ["", "MGMT", "TOUR", "VIDEOS", "SHOP", "STATS"];
@@ -22,7 +19,7 @@ export default class FullPage extends React.Component {
   }
 
   handlePageChange = number => {
-    console.log(number)
+    console.log(number);
     this.setState({ currentPage: number });
   };
 
@@ -33,25 +30,28 @@ export default class FullPage extends React.Component {
 
   getPagesNumbers = () => {
     const pageNumbers = [];
-    
 
     for (let i = 1; i < navigation.length; i++) {
       pageNumbers.push(
-        <Pager.Item className={`${this.state.currentPage === i - 1 ? "active" : ""}`} key={i} eventKey={i - 1} onSelect={this.handlePageChange}>
+        <Pager.Item
+          className={`${this.state.currentPage === i - 1 ? "active" : ""}`}
+          key={i}
+          eventKey={i - 1}
+          onSelect={this.handlePageChange}
+        >
           {navigation[i]}
         </Pager.Item>,
       );
     }
-    console.log(pageNumbers)
+    console.log(pageNumbers);
 
     return [...pageNumbers];
   };
 
-
-   scrollToTop = () => {
-    console.log("clicked")
+  scrollToTop = () => {
+    console.log("clicked");
     this.setState({ currentPage: 0 });
-  }
+  };
 
   render() {
     const pagesNumbers = this.getPagesNumbers();
@@ -67,7 +67,7 @@ export default class FullPage extends React.Component {
           <SecondComponent />
           <ThirdComponent />
           <FourthComponent />
-          <FifthComponent onClick={this.scrollToTop}/>
+          <FifthComponent onClick={this.scrollToTop} />
         </ReactPageScroller>
         <Pager className="pagination-additional-class" bsSize="large">
           <img src={Logo} className="main-logo" height={27} />

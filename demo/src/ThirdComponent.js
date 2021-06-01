@@ -12,8 +12,7 @@ export default () => {
           alignItems: "center",
           justifyContent: "center",
         }}
-      >
-      </div>
+      ></div>
       <iframe
         width="100%"
         height="100%"
