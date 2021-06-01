@@ -2,12 +2,6 @@
 
 Sample Project for Artst: MGMT
 
-# APIS/LIBRARIES
-
-- Spotify API
-- Framer motion
-- react-page-scroller
-
 ### Demo
 
 ```
@@ -16,6 +10,14 @@ npm start
 ```
 
 App will start on localhost:3000.
+
+# Api's/Libraries
+
+- Spotify API
+- Framer motion
+- react-page-scroller
+
+
 
 # Troubleshooting
 
