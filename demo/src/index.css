@@ -281,7 +281,7 @@ input:focus, textarea:focus, select:focus{
   display: flex;
   justify-content: center;
   background-image: url("./assets/Scenic.png") no-repeat center center;
-  background-image: linear-gradient( to Bottom, rgba(61, 136, 161, 0.527), rgb(116 71 121 / 74%) ), url("./assets/Arcade.jpg");
+  background-image: linear-gradient( to Bottom, rgb(67 132 154 / 53%), rgb(160 108 142 / 74%)), url("./assets/Arcade.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
