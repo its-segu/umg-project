@@ -49,7 +49,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Souvenir T-Shirt</h3>
-            <p className="content-text">$19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$19.99</p>
           </div>
         </div>
         <div className="content">
@@ -63,7 +63,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Tee</h3>
-            <p className="content-text">$24.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$24.99</p>
           </div>
           </a>
         </div>
@@ -78,7 +78,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Poster</h3>
-            <p className="content-text">19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>19.99</p>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">MGMT Poster</h3>
-            <p className="content-text">19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>19.99</p>
           </div>
         </div>
         <div className="content">
@@ -109,7 +109,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">MGMT Souvenir T-Shirt</h3>
-            <p className="content-text">$19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$19.99</p>
           </div>
         </div>
         <div className="content">
@@ -123,7 +123,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">Concert Tee</h3>
-            <p className="content-text">$24.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$24.99</p>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Souvenir T-Shirt</h3>
-            <p className="content-text">$19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$19.99</p>
           </div>
         </div>
         <div className="content">
@@ -155,13 +155,13 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Tee</h3>
-            <p className="content-text">$24.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$24.99</p>
           </div>
           </a>
         </div>
         <div className="content">
           <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank" />
-          <div className="content-overlay"></div>
+          <div className="content-overlay" style={{fontSize: "16px"}}></div>
           <img
             className="content-image"
             src={Poster}
@@ -170,7 +170,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Poster</h3>
-            <p className="content-text">19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>19.99</p>
           </div>
         </div>
       </div>
@@ -187,7 +187,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">MGMT Poster</h3>
-            <p className="content-text">19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>19.99</p>
           </div>
         </div>
         <div className="content">
@@ -201,12 +201,12 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">MGMT Souvenir T-Shirt</h3>
-            <p className="content-text">$19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$19.99</p>
           </div>
         </div>
         <div className="content">
           <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank" />
-          <div className="content-overlay"></div>
+          <div className="content-overlay" style={{fontSize: "16px"}}></div>
           <img
             className="content-image"
             src={Shirt2}
@@ -215,7 +215,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">Concert Tee</h3>
-            <p className="content-text">$24.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$24.99</p>
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Souvenir T-Shirt</h3>
-            <p className="content-text">$19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$19.99</p>
           </div>
         </div>
         <div className="content">
@@ -247,7 +247,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
           <h3 className="content-title">MGMT Tee</h3>
-            <p className="content-text">$24.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$24.99</p>
           </div>
           </a>
         </div>
@@ -265,7 +265,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">MGMT Poster</h3>
-            <p className="content-text">19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>19.99</p>
           </div>
         </div>
         <div className="content">
@@ -279,7 +279,7 @@ export default () => {
           />
           <div className="content-details fadeIn-bottom">
             <h3 className="content-title">MGMT Souvenir T-Shirt</h3>
-            <p className="content-text">$19.99</p>
+            <p className="content-text" style={{fontSize: "16px"}}>$19.99</p>
           </div>
         </div>
       </div>
