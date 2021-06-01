@@ -32,5 +32,6 @@ npm install react react-dom --save
 - More responsiveness
 - Test on all screens sizes
 - Use ENV file
+- CSS/Compiler updates
 
 
