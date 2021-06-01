@@ -11,7 +11,7 @@ npm start
 
 App will start on localhost:3000.
 
-# Api's/Libraries
+# Apis/Libraries
 
 - Spotify API
 - Framer motion
