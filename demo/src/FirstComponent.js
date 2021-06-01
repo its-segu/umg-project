@@ -104,38 +104,46 @@ export default () => {
               justifyContent: "center",
             }}
           >
-            <a src="" />
-            <img
-              src={Twitter}
-              height={40}
-              width={40}
-              style={{ marginRight: 10, cursor: "pointer" }}
-            />
-            <img
-              src={Facebook}
-              height={40}
-              width={40}
-              style={{ marginRight: 10, cursor: "pointer" }}
-            />
-            <img
-              src={Soundcloud}
-              height={40}
-              width={40}
-              style={{ marginRight: 10, cursor: "pointer" }}
-            />
-
-            <img
-              src={spotify}
-              height={40}
-              width={40}
-              style={{ marginRight: 10, cursor: "pointer" }}
-            />
-            <img
-              src={Itunes}
-              height={40}
-              width={40}
-              style={{ marginRight: 10, cursor: "pointer" }}
-            />
+            <a href="https://twitter.com/whoisMGMT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img
+                src={Twitter}
+                height={40}
+                width={40}
+                style={{ marginRight: 10, cursor: "pointer" }}
+              />
+            </a>
+            <a href="https://www.facebook.com/mgmt">
+              <img
+                src={Facebook}
+                height={40}
+                width={40}
+                style={{ marginRight: 10, cursor: "pointer" }}
+              />
+            </a>
+            <a href="https://soundcloud.com/whoismgmt">
+              <img
+                src={Soundcloud}
+                height={40}
+                width={40}
+                style={{ marginRight: 10, cursor: "pointer" }}
+              />
+            </a>
+            <a href="https://soundcloud.com/whoismgmt">
+              <img
+                src={spotify}
+                height={40}
+                width={40}
+                style={{ marginRight: 10, cursor: "pointer" }}
+              />
+            </a>
+            <a href="https://soundcloud.com/whoismgmt">
+              <img
+                src={Itunes}
+                height={40}
+                width={40}
+                style={{ marginRight: 10, cursor: "pointer" }}
+              />
+            </a>
           </div>
         </div>
       </div>
