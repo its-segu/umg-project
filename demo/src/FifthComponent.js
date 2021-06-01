@@ -116,9 +116,6 @@ const FifthComponent = props => {
       popularity.push(each.popularity);
     });
 
-    // plotData["names"] = names;
-    // plotData["popularity"] = popularity;
-
     setData({
       options: {
         chart: {

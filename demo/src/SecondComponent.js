@@ -16,6 +16,23 @@ import SearchIcon from "@material-ui/icons/Search";
 import TextField from "@material-ui/core/TextField";
 import { useMediaQuery } from "react-responsive";
 
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
+  return isDesktop ? children : null;
+};
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+  return isTablet ? children : null;
+};
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  return isMobile ? children : null;
+};
+const Default = ({ children }) => {
+  const isNotMobile = useMediaQuery({ minWidth: 768 });
+  return isNotMobile ? children : null;
+};
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
@@ -191,8 +208,9 @@ export default function SecondComponent() {
 
   return (
     <div className={classes.root}>
+      <Desktop>
       <div className={classes.tourDateTitle}>
-        <div style={{ width: 250 }}></div>
+        <div className="displayNone" style={{ width: 250 }}></div>
         <h1 className="fontfam" style={{ paddingTop: 30 }}>
           TOUR DATES
         </h1>
@@ -257,6 +275,135 @@ export default function SecondComponent() {
           </div>
         ))}
       </div>
+      </Desktop>
+      <Tablet>
+      <div className={classes.tourDateTitle}>
+        <div className="displayNone" style={{ width: 250 }}></div>
+        <h1 className="fontfam" style={{ paddingTop: 30 }}>
+          TOUR DATES
+        </h1>
+        <input
+          label="Search"
+          variant="outlined"
+          type="search"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          className="searchInput"
+          style={{
+            borderRadius: 50,
+            width: 250,
+            height: 30,
+            color: "black",
+            padding: 20,
+            marginTop: 30,
+            marginRight: 10,
+          }}
+        />
+      </div>
+      <div className={classes.scroll}>
+        {searchResults.map((tourDate, i) => (
+          <div key={i} className={classes.tourDate}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "left",
+              }}
+            >
+              <div className="td-wrap">
+                <p className="tourDateFont1">{tourDate.day}</p>
+                <p className="tourDateFont2">{tourDate.date}</p>
+                <p className="tourDateFont3">{tourDate.year}</p>
+              </div>
+              <div>
+                <p className="tourDateFont1">{tourDate.location}</p>
+                <p className="tourDateFont2">{tourDate.venue}</p>
+                <p className="tourDateFont3">{tourDate.guests}</p>
+              </div>
+            </div>
+            <div className={classes.buttonDiv}>
+              <Button
+                classes={{
+                  root: classes.buttonSecond,
+                }}
+                className="tourDateButton"
+              >
+                VIP
+              </Button>
+              <Button
+                classes={{
+                  root: classes.buttonRoot,
+                }}
+                className="tourDateButton"
+              >
+                TICKETS
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
+      </Tablet>
+      <Mobile>
+      <div className={classes.tourDateTitle}>
+        <div className="displayNone" style={{ width: 250 }}></div>
+        <h1 className="fontfam" style={{ paddingTop: 30 }}>
+          TOUR DATES
+        </h1>
+        <input
+          label="Search"
+          variant="outlined"
+          type="search"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          className="searchInput"
+          style={{
+            borderRadius: 50,
+            width: 250,
+            height: 30,
+            color: "black",
+            padding: 20,
+            marginTop: 30,
+            marginRight: 10,
+          }}
+        />
+      </div>
+      <div className={classes.scroll}>
+        {searchResults.map((tourDate, i) => (
+          <div key={i} className={classes.tourDate}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "left",
+              }}
+            >
+              <div className="td-wrap">
+                <p className="tourDateFont1">{tourDate.day}</p>
+                <p className="tourDateFont2">{tourDate.date}</p>
+                <p className="tourDateFont3">{tourDate.year}</p>
+              </div>
+              <div>
+                <p className="tourDateFont1">{tourDate.location}</p>
+                <p className="tourDateFont2">{tourDate.venue}</p>
+                <p className="tourDateFont3">{tourDate.guests}</p>
+              </div>
+            </div>
+            <div className={classes.buttonDiv}>
+              <Button
+                classes={{
+                  root: classes.buttonRoot,
+                }}
+                className="tourDateButton"
+              >
+                TICKETS
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
+      </Mobile>
     </div>
   );
 }
