@@ -322,10 +322,10 @@ input:focus, textarea:focus, select:focus{
   border-radius: 30px;
   background-color: transparent;
   margin-right: 50px;
-  font-size: 17px;
+  font-size: 16px;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 .fontfam {
   font-family: "Permanent Marker", cursive;
