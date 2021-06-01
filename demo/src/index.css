@@ -339,7 +339,7 @@ input:focus, textarea:focus, select:focus{
   text-decoration: none;
   background-color: transparent;
   border-radius: 50;
-  border: 3px solid #ff4ee1;
+  border: 2px solid #ff4ee1;
   /* color:#ff4ee1 ; */
 }
 
