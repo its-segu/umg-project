@@ -26,7 +26,7 @@ export default () => {
         <img
           src={mgmt}
           className="imageFirstComp pulse"
-          style={{ opacity: 0.84 }}
+          style={{ opacity: 0.90 }}
           data-aos="fade-down"
         />
         <div
